@@ -1,0 +1,17 @@
+{
+  "name": "adidas-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "crawl": "mysql -u `cat mysql.user` -p`cat mysql.pass` < schema.sql && node src/crawler.js && mysqldump -u `cat mysql.user` -p`cat mysql.pass` --add-drop-table --databases adidas > schema_data.sql && exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hashmap": "^2.4.0",
+    "mysql": "^2.18.1",
+    "puppeteer": "^3.0.2"
+  }
+}

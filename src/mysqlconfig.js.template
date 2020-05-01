@@ -1,0 +1,7 @@
+module.exports = {
+  host: 'localhost',
+  user: '[YOUR USER]',
+  password: '[YOUR PASS]',
+  database: 'adidas',
+  debug: ['ComQueryPacket'] 
+};

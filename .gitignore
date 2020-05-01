@@ -1,0 +1,6 @@
+**/node_modules/**
+package-lock.json
+mysql.pass
+mysql.user
+src/mysqlconfig.js
+schema_data.sql
